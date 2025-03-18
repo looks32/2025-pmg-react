@@ -1,4 +1,4 @@
-import Btn from "@/components/Btn";
+import Btn from "@/components/btn"
 import styles from "@/css/main.module.css";
 
 export default function Home() {
