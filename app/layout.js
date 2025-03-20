@@ -9,7 +9,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body>
+        <header>헤더</header>
         {children}
+        <footer>footer</footer>
       </body>
     </html>
   );
