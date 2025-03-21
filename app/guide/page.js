@@ -5,7 +5,7 @@ import TitleText from "@/components/titleText";
 
 export default function Board() {
   return (
-    <>
+    <div className="wrap">
       <h2>타이틀</h2>
       <TitleText text="제목"/>
 
@@ -18,11 +18,15 @@ export default function Board() {
       <Input placeholder="내용을 입력해주세요" error="내용을 입력하지 않았습니다."/>
 
       <style jsx>{`
+        .wrap {
+          padding: 0 20px;
+        }
+
         h2 {
           font-size: 18px;
-          margin: 80px 0 20px;
+          margin: 70px 0 20px;
         }
       `}</style>
-    </>
+    </div>
   );
 }
