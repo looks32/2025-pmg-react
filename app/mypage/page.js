@@ -1,5 +1,7 @@
+import TitleText from "@/components/titleText";
+
 export default function Mypage() {
   return (
-    <div>마이페이지</div>
+    <TitleText text="마이페이지"/>
   );
 }
