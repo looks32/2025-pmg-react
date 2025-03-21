@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
         <div className={styles.in}>
-            <h1>
+            <h1 className={styles.logo}>
                 <FontAwesomeIcon icon={faFire} />
             </h1>
 
