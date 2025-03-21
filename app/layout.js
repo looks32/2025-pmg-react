@@ -1,6 +1,7 @@
 import "@/css/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import Header from "@/components/header";
 config.autoAddCss = false;
 
 export const metadata = {
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body>
         <div className="wrap">
-          <header>헤더</header>
+          <Header/>
           {children}
         </div>
       </body>

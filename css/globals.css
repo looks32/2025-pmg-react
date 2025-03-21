@@ -52,7 +52,7 @@ menu,li {
   height: 100svh;
   min-height: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   border-left:1px solid #f3f3f3;
   border-right:1px solid #f3f3f3;
 }
