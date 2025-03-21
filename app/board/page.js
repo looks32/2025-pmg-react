@@ -1,8 +1,9 @@
 import Btn from "@/components/btn";
 import TitleText from "@/components/titleText";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
+import { faThumbsUp } from "@fortawesome/free-solid-svg-icons/faThumbsUp";
+import { faThumbsDown } from "@fortawesome/free-solid-svg-icons/faThumbsDown";
+
 
 export default function Board() {
   return (
@@ -10,7 +11,8 @@ export default function Board() {
       <TitleText text="제목"/>
       <div>board</div>
       <Btn text="게시판 버튼"/>
-      <FontAwesomeIcon icon={faArrowRight} />
+      <FontAwesomeIcon icon={faThumbsUp} style={{color:"#c0c0c0"}}/>
+      <FontAwesomeIcon icon={faThumbsDown} style={{color: "#c0c0c0"}} />
     </>
   );
 }
