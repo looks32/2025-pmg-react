@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
       <body>
         <div className="wrap">
           <Header/>
-          {children}
+          <div className="in">
+            {children}
+          </div>
         </div>
       </body>
     </html>
