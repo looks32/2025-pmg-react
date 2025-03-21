@@ -1,1 +1,16 @@
-.btn {height: 42px; padding: 0 40px; color: #fff; border-radius: 8px; background-color: #0067FF;}
+.btn {
+    height: 42px;
+    padding: 0 40px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #0067FF;
+}
+.fullWidth {
+    display: block;
+    width: 100%;
+}
+.line {
+    color: #575757;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}

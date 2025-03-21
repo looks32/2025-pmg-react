@@ -8,7 +8,7 @@ export default function Login() {
       <div className={styles.login}>로그인</div>
       <Input placeholder="아이디" error="아이디를 입력해주세요"/>
 
-      <Btn text="확인"/>
+      <Btn text="확인" fullWidth line/>
     </div>
   );
 }
