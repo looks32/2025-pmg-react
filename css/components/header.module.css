@@ -2,6 +2,8 @@
     position: fixed;
     width: 599px;
     border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .in {
