@@ -1,8 +1,4 @@
 .completeWrap {
-    text-align: center;
-}
-
-.complteArea {
     margin-bottom: 20px;
     padding: 70px 0;
     text-align: center;
@@ -10,7 +6,6 @@
     border-radius: 8px;
     background-color: #F8FBFF;
 }
-
 .completeWrap span {
     color: #0067FF;
     font-weight: 600;
