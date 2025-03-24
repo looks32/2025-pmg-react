@@ -1,0 +1,11 @@
+.completeWrap {
+    padding: 70px 0;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #F8FBFF;
+}
+.completeWrap span {
+    color: #0067FF;
+    font-weight: 600;
+}
