@@ -1,7 +1,7 @@
 import styles from "@/css/components/btn.module.css";
 
-export default function Btn({text, fullWidth = false, line = false}) {
+export default function Btn({text, fullWidth = false, line = false, onClick}) {
     return (
-        <button className={`${styles.btn} ${fullWidth ? styles.fullWidth : ""} ${line ? styles.line : ""}`}>{text}</button>
+        <button onClick={onClick} className={`${styles.btn} ${fullWidth ? styles.fullWidth : ""} ${line ? styles.line : ""}`}>{text}</button>
     );
 }
