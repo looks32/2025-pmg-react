@@ -1,5 +1,6 @@
 .loginContent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -10,4 +11,34 @@
 
 .loginContent > div {
     width: 100%;
+}
+
+.loginForm {
+}
+
+.loginInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.loginInfo a {
+    padding: 0 10px;
+}
+
+.loginInfo li {
+    position: relative;
+}
+
+.loginInfo li:not(:first-child) a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 9px;
+    background-color: #ddd;
+    transform: translateY(-50%);
 }
