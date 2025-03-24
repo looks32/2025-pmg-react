@@ -17,6 +17,7 @@
     }
 
     .active a {
+        border-color: #0067ff;
         color: #fff;
         background-color: #0067ff;
     }
