@@ -1,0 +1,11 @@
+.boardList {
+    border-top:1px solid #ddd;
+    >li  {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.btnWrap {
+    margin-top: 20px;
+    text-align: right;
+}

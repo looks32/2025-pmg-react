@@ -1,0 +1,37 @@
+.cardWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+    .imgArea {
+        position: relative;
+        width: 159px;
+        min-height: 115px;
+        img {
+            height: auto !important;
+        }
+    }
+    .textArea {
+        width: calc(100% - 180px);
+
+        strong {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        p {
+            margin-top: 14px;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            ul {
+                display: flex;
+                li ~ li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,24 +1,40 @@
 import Btn from "@/components/btn";
 import TitleText from "@/components/titleText";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons/faThumbsUp";
-import { faThumbsDown } from "@fortawesome/free-solid-svg-icons/faThumbsDown";
-import Link from "next/link";
 import Pagination from "@/components/pagination";
-
+import BoardCard from "@/components/boardCard";
+import styles from "@/css/board/board.module.css";
+import Input from "@/components/input";
 
 export default function Board() {
   return (
     <>
       <TitleText text="일반 게시판"/>
-      <div>board</div>
 
-      <Link href="/board/123">링크 123</Link>
+      <div>
+        <div>총 4건</div>
+        <div>
+          <select>
+            <option>aa</option>
+          </select>
+          <form>
+            <Input/>
+            <button>검색</button>
+          </form>
+        </div>
+      </div>
 
-      <Btn text="글쓰기"/>
+      <ul className={styles.boardList}>
+        <li>
+          <BoardCard/>
+        </li>
+        <li>
+          <BoardCard/>
+        </li>
+      </ul>
 
-      <FontAwesomeIcon icon={faThumbsUp} style={{color:"#c0c0c0"}} />
-      <FontAwesomeIcon icon={faThumbsDown} style={{color: "#c0c0c0"}} />
+      <div className={styles.btnWrap}>
+        <Btn text="글쓰기"/>
+      </div>
 
       <Pagination/>
     </>
