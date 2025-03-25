@@ -25,6 +25,9 @@ export default function FindPassword() {
     if (step === 1) {
       // 여기에 유효성 검사 가능
       setStep(2)
+    } else if (step === 2) {
+      // 유효성 검사 후
+      setStep(3)
     } else {
       // 최종 제출 처리 (예: API 호출)
       console.log('비밀번호 변경 요청:', form)
@@ -71,12 +74,23 @@ export default function FindPassword() {
         </>
       )}
 
-      <div className={styles.btnWrap}>
-        <Btn text={step === 1 ? '다음' : '비밀번호 변경'} onClick={handleNext} />
-      </div>
+      {step === 3 && (
+        <>
+          <Complete password="123" showId={false} showPassword={true} />
 
-      {/* 결과 확인용 */}
-      <Complete password="pass456" showId={false} showPassword={true} />
+          <div className={`${styles.btnWrap} ${styles.textCenter}`}>
+            <Btn text="로그인" onClick={() => {
+            }} />
+          </div>
+        </>
+      )}
+
+      {step < 3 && (
+        <div className={styles.btnWrap}>
+          <Btn text={step === 1 ? '다음' : '비밀번호 변경'} onClick={handleNext} />
+        </div>
+      )}
+
     </>
   )
 }

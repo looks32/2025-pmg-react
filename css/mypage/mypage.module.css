@@ -1,0 +1,54 @@
+.myImgWrap {
+    position: relative;
+    width: 178px;
+    height: 178px;
+    margin: 80px auto 0;
+}
+
+.myImg {
+    font-size: 80px;
+    text-align: center;
+    line-height: 167px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #A1B3CC;
+}
+
+.editBtn {
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #c0c0c0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.userNameWrap {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.useName {
+    font-size: 18px;
+}
+
+.email {
+    margin-top: 20px;
+}
+
+.btnWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 370px;
+    margin: 100px auto 0;
+}
+
+.btnWrap > * {
+    flex: 0 1 45%;
+  }
