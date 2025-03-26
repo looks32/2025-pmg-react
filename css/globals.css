@@ -30,7 +30,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,texta
 }
 
 input, select, textarea, button, label {
-  vertical-align:middle
+  vertical-align: middle
 }
 
 input {
@@ -38,14 +38,14 @@ input {
 }
 
 img {
-  max-width:100%;
-  height:auto;
-  vertical-align:middle;
-  border-style:none
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none
 }
 
 menu,li {
-  list-style:none
+  list-style: none
 }
 
 .wrap {
@@ -54,7 +54,6 @@ menu,li {
   height: 100svh;
   min-height: 100%;
   margin: 0 auto;
-  /* padding: 0 10px; */
   border-left:1px solid #f3f3f3;
   border-right:1px solid #f3f3f3;
 }
