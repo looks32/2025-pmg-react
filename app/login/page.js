@@ -10,8 +10,8 @@ export default function Login() {
       <div>
         <div className={styles.loginForm}>
           <TitleText text="로그인"/>
-          <Input placeholder="아이디"/>
-          <Input placeholder="비밀번호"/>
+          <Input type="text" placeholder="아이디"/>
+          <Input type="password" placeholder="비밀번호"/>
 
           <Btn text="로그인" fullWidth/>
         </div>
