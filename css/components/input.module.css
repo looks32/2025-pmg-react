@@ -5,10 +5,10 @@
     padding: 0 15px;
     border-radius: 8px;
     border: 1px solid #DDD;
+    transition:all 0.4s;
 }
 .inputWrap input:focus {
     border: 1px solid #0067FF;
-    transition:all 0.4s;
 }
 .inputWrap input::placeholder {
     color: #C0C0C0;
