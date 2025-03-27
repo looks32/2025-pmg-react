@@ -16,7 +16,7 @@ export default function Board() {
         <div className={styles.searchArea}>
           <Select/>
           <form>
-            <Input/>
+            <Input placeholder="검색어를 입력하세요."/>
             <button className={styles.searchBtn}></button>
           </form>
         </div>
