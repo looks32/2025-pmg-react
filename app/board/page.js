@@ -4,21 +4,20 @@ import Pagination from "@/components/pagination";
 import BoardCard from "@/components/boardCard";
 import styles from "@/css/board/board.module.css";
 import Input from "@/components/input";
+import Select from "@/components/select";
 
 export default function Board() {
   return (
     <>
       <TitleText text="일반 게시판"/>
 
-      <div>
+      <div className={styles.boardInfo}>
         <div>총 4건</div>
-        <div>
-          <select>
-            <option>aa</option>
-          </select>
+        <div className={styles.searchArea}>
+          <Select/>
           <form>
             <Input/>
-            <button>검색</button>
+            <button className={styles.searchBtn}></button>
           </form>
         </div>
       </div>

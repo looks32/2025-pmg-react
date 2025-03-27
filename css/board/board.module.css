@@ -1,7 +1,40 @@
 .boardList {
+    margin-top: 20px;
     border-top:1px solid #ddd;
     >li  {
         border-bottom: 1px solid #ddd;
+    }
+}
+
+.boardInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchArea {
+    display: flex;
+    align-items: center;
+    
+    input {
+        margin-bottom: 0 !important;
+    }
+
+    select {
+        height: 42px;
+        margin-right: 10px;
+    }
+
+    form {
+        display: flex;
+    }
+
+    .searchBtn {
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        margin-left: 10px;
+        background:#0067ff url(../../public/search.png) no-repeat center center; background-size: 24px;
     }
 }
 
