@@ -1,0 +1,15 @@
+
+.profile {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.imgWrap {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}

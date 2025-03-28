@@ -1,10 +1,7 @@
 import styles from "@/css/components/boardCard.module.css";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons/faThumbsUp";
-import { faEye } from "@fortawesome/free-solid-svg-icons/faEye";
-import { faCommentDots } from "@fortawesome/free-solid-svg-icons/faCommentDots";
 import Image from "next/image";
+import BoardState from "./boardState";
 
 
 
@@ -20,17 +17,7 @@ export default function BoardCard() {
                 <p>내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용내용내용내용</p>
                 <div className={styles.detail}>
                     <span>2025.03.17</span>
-                    <ul>
-                        <li>
-                            <FontAwesomeIcon icon={faThumbsUp} style={{color:"#c0c0c0"}}/> 1
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faEye} style={{color:"#c0c0c0"}}/> 1
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faCommentDots} style={{color:"#c0c0c0"}}/> 1
-                        </li>
-                    </ul>
+                    <BoardState like="9" see="10" comment="20" />
                 </div>
             </div>
             </div>
