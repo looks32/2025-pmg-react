@@ -16,11 +16,25 @@
         border: 1px solid #ddd;
         border-radius: 8px;
         background-color: #fff;
+        transition: 0.4s all; 
         svg {
             color: #c0c0c0;
             margin-right: 6px;
+            transition: 0.4s all; 
+        }
+
+        &:hover {
+            color: #fff;
+            border-color: #0067ff;
+            background-color: #0067ff;
+
+            svg {
+                color: #fff;
+            }
         }
     }
+
+    
 }
 
 .textArea {
