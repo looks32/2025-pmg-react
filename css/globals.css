@@ -52,11 +52,12 @@ menu,li {
 .wrap {
   max-width: 600px;
   min-width: 320px;
-  height: 100svh;
-  min-height: 100%;
+  min-height: 100svh;
+  height: 100%;
   margin: 0 auto;
   border-left:1px solid #f3f3f3;
   border-right:1px solid #f3f3f3;
+  padding-bottom: 30px;
 }
 
 .in {

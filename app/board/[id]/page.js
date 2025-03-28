@@ -6,6 +6,8 @@ import Like from "@/components/like";
 import Textarea from "@/components/textarea";
 import Btn from "@/components/btn";
 import Pagination from "@/components/pagination";
+import MoreBtn from "@/components/moreBtn";
+import BoardComment from "@/components/boardComment";
 
 
 export default function BoardDetail() {
@@ -20,6 +22,9 @@ export default function BoardDetail() {
           <BoardProfile name="홍길동" />
           <BoardState like="20" see="10" comment="9" />
         </div>
+        <div className={styles.moreArea}>
+          <MoreBtn/>
+        </div>
       </div>
       <div className={styles.contentArea}>
         <p>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</p>
@@ -33,7 +38,19 @@ export default function BoardDetail() {
           <Btn text="확인" />
         </div>
 
+        <div className={styles.commentList}>
+          <ul>
+            <li>
+              <BoardComment/>
+            </li>
+            <li>
+              <BoardComment/>
+            </li>
+          </ul>
+        </div>
+
         <Pagination/>
+
       </div>
     </>
   );

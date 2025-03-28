@@ -1,0 +1,26 @@
+.dot {
+    width: 25px;
+    height: 25px;
+    background:url(../../public/more_btn_dot.png) no-repeat center center; background-size:25px;
+}
+
+.btnArea {
+    position: absolute;
+    right: -4px;
+    bottom: -115px;
+    border: 1px solid #eaeaea;
+    width: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    button, a {
+        width: 100%;
+        text-align: left;
+        padding: 17px 0 17px 17px;
+        vertical-align: baseline;
+        background-color: #fff;
+    }
+
+    button + button {
+        border-top: 1px solid #eaeaea;
+    }
+}

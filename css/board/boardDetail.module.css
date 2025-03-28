@@ -27,6 +27,12 @@
     margin-top: 18px;
 }
 
+.moreArea {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .contentArea {
     margin-top: 20px;
 }
@@ -38,6 +44,11 @@
 
 .commentArea {
     margin-top: 70px;
+}
+
+.commentList {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
 }
 
 .btnArea {

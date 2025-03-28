@@ -1,0 +1,41 @@
+.commentArea {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+.titleArea {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+
+    button {
+        width: 56px;
+        padding: 5px 0;
+        color: #3c3c3c;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        svg {
+            color: #c0c0c0;
+            margin-right: 6px;
+        }
+    }
+}
+
+.textArea {
+    margin-top: 10px;
+    padding-left: 36px;
+
+    button {
+        background-color: transparent;
+        margin-top: 5px;
+        color: #3c3c3c;
+    }
+}
+
+.moreBtnArea {
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
