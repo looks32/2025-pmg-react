@@ -11,7 +11,9 @@ export default function Header() {
     <div className={styles.header}>
         <div className={styles.in}>
             <h1 className={styles.logo}>
-                <FontAwesomeIcon icon={faFire} />
+                <Link href="/">
+                  <FontAwesomeIcon icon={faFire} />
+                </Link>
             </h1>
 
             <ul className={styles.nav}>

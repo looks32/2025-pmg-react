@@ -4,17 +4,16 @@
     margin-bottom: 10px;
     padding: 0 15px;
     border-radius: 8px;
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
     transition:all 0.4s;
 }
 .inputWrap input:focus {
-    border: 1px solid #0067FF;
+    border: 1px solid #0067ff;
 }
 .inputWrap input::placeholder {
-    color: #C0C0C0;
+    color: #c0c0c0;
 }
 .inputWrap .errorText {
-    margin-top: 10px;
     font-size: 12px;
-    color: #F62424;
+    color: #f62424;
 }
