@@ -5,15 +5,22 @@ import styles from "@/css/login/login.module.css";
 import Link from "next/link";
 
 export default function Login() {
+  async function handleForm(formData) {
+    "use server";
+    console.log(formData.get("email"), formData.get("password"));
+    console.log("i run in the server baby!");
+  }
   return (
     <div className={styles.loginContent}>
       <div>
         <div className={styles.loginForm}>
           <TitleText text="로그인"/>
-          <Input type="text" placeholder="아이디"/>
-          <Input type="password" placeholder="비밀번호"/>
+          <form action={handleForm}>
+            <Input name="id" type="text" placeholder="아이디"/>
+            <Input name="password" type="password" placeholder="비밀번호"/>
 
-          <Btn text="로그인" fullWidth/>
+            <Btn text="로그인" fullWidth/>
+          </form>
         </div>
         <ul className={styles.loginInfo}>
           <li>
