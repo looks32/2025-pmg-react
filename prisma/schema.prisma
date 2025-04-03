@@ -8,9 +8,22 @@ datasource db {
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
-  username String  @unique
-  email    String? @unique
-  password String?
-  phone    String? @unique
+  id         Int         @id @default(autoincrement())
+  userId     String?     @unique
+  email      String?     @unique
+  password   String?
+  phone      String?     @unique
+  created_at DateTime    @default(now())
+  updated_at DateTime    @updatedAt
+  BoardData  BoardData[]
+}
+
+model BoardData {
+  id         Int      @id @default(autoincrement())
+  title      String?
+  content    String?
+  user       User     @relation(fields: [userId], references: [id])
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  userId     Int
 }
