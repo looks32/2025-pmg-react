@@ -16,8 +16,8 @@ export default function Login() {
         <div className={styles.loginForm}>
           <TitleText text="로그인"/>
           <form action={handleForm}>
-            <Input name="id" type="text" placeholder="아이디"/>
-            <Input name="password" type="password" placeholder="비밀번호"/>
+            <Input name="id" type="text" placeholder="아이디" required="required"/>
+            <Input name="password" type="password" placeholder="비밀번호" required="required"/>
 
             <Btn text="로그인" fullWidth/>
           </form>
