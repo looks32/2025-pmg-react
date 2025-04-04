@@ -9,6 +9,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     background-color: #0067ff;
+    cursor: pointer;
 }
 .fullWidth {
     display: flex;

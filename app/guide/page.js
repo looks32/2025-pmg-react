@@ -10,8 +10,8 @@ export default function Guide() {
       <TitleText text="제목"/>
 
       <h2>버튼</h2>
-      <Btn text="버튼" onClick={() => console.log("clicked")}/>
-      <Btn text="버튼" line href="/"/>
+      <Btn text="버튼"/>
+      <Btn text="버튼" line />
       <Btn text="버튼" fullWidth href="/login"/>
 
       <h2>인풋</h2>
