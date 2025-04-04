@@ -5,21 +5,22 @@ import BoardState from "./boardState";
 
 
 
-export default function BoardCard() {
+export default function BoardCard({title, content, createdAt, id, username}) {
     return (
-        <Link href="">
+        <Link href={`/board/${id}`}>
             <div className={styles.cardWrap}>
-            <div className={styles.imgArea}>
-                <Image src="/board_default.jpg" sizes="100%" fill alt="기본 이미지" />
-            </div>
-            <div className={styles.textArea}>
-                <strong>test</strong>
-                <p>내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용내용내용내용</p>
-                <div className={styles.detail}>
-                    <span>2025.03.17</span>
-                    <BoardState like="9" see="10" comment="20" />
+                <div className={styles.imgArea}>
+                    <Image src="/board_default.jpg" sizes="100%" fill alt="기본 이미지" />
                 </div>
-            </div>
+                <div className={styles.textArea}>
+                    <strong>{title}</strong>
+                    <p>{username}</p>
+                    <p>{content}</p>
+                    <div className={styles.detail}>
+                        <span>{createdAt}</span>
+                        <BoardState like="9" see="10" comment="20" />
+                    </div>
+                </div>
             </div>
         </Link>
     );
