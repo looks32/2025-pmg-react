@@ -1,12 +1,17 @@
 .btn {
-    height: 42px;
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 40px;
+    height: 42px;
     color: #fff;
+    box-sizing: border-box;
     border-radius: 8px;
     background-color: #0067ff;
 }
 .fullWidth {
-    display: block;
+    display: flex;
     width: 100%;
 }
 .line {
