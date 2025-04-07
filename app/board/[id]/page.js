@@ -8,18 +8,30 @@ import Btn from "@/components/btn";
 import Pagination from "@/components/pagination";
 import MoreBtn from "@/components/moreBtn";
 import BoardComment from "@/components/boardComment";
+import db from "@/lib/db";
 
+export default async function BoardDetail({ params }) {
 
-export default function BoardDetail() {
+  const { id } = await params;
+
+  const post = await db.boardData.findUnique({
+    where: {
+      id : parseInt(id),
+    },
+    include: {
+      user: true,
+    },
+  });
+  
   return (
     <>
       <div className={styles.imgWrap}>
         <Image src="/board_detail_default.jpg" sizes="100%" fill alt="기본 이미지" />
       </div>
       <div className={styles.titleArea}>
-        <strong>test</strong>
+        <strong>{post.title}</strong>
         <div className={styles.titleDetail}>
-          <BoardProfile name="홍길동" />
+          <BoardProfile name={post.user.username} />
           <BoardState like="20" see="10" comment="9" />
         </div>
         <div className={styles.moreArea}>
@@ -27,7 +39,7 @@ export default function BoardDetail() {
         </div>
       </div>
       <div className={styles.contentArea}>
-        <p>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</p>
+        <p>{post.content}</p>
         <div className={styles.likeArea}>
           <Like/>
         </div>
