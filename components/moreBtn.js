@@ -4,7 +4,7 @@ import styles from "@/css/components/moreBtn.module.css";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function MoreBtn() {
+export default function MoreBtn({href}) {
 
     const [open, setOpen] = useState(false);
     const onOpen = () => {
@@ -16,7 +16,7 @@ export default function MoreBtn() {
             <button className={styles.dot} onClick={onOpen}></button>
             {open ? 
             <div className={styles.btnArea}>
-                <Link href="">수정하기</Link>
+                <Link href={`/board/${href}/edit`}>수정하기</Link>
                 <button>삭제하기</button>
             </div>
             : ''}

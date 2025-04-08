@@ -10,7 +10,7 @@ export default function BoardCard({title, content, createdAt, id, username}) {
         <Link href={`/board/${id}`}>
             <div className={styles.cardWrap}>
                 <div className={styles.imgArea}>
-                    <Image src="/board_default.jpg" sizes="100%" fill alt="기본 이미지" />
+                    <Image src="/board_default.jpg" sizes="100%" fill alt="기본 이미지" priority  />
                 </div>
                 <div className={styles.textArea}>
                     <strong>{title}</strong>

@@ -26,7 +26,7 @@ export default async function BoardDetail({ params }) {
   return (
     <>
       <div className={styles.imgWrap}>
-        <Image src="/board_detail_default.jpg" sizes="100%" fill alt="기본 이미지" />
+        <Image src="/board_detail_default.jpg" sizes="100%" fill alt="기본 이미지" priority />
       </div>
       <div className={styles.titleArea}>
         <strong>{post.title}</strong>
@@ -35,7 +35,7 @@ export default async function BoardDetail({ params }) {
           <BoardState like="20" see="10" comment="9" />
         </div>
         <div className={styles.moreArea}>
-          <MoreBtn/>
+          <MoreBtn href={id} />
         </div>
       </div>
       <div className={styles.contentArea}>
