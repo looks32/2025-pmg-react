@@ -49,6 +49,6 @@
     margin: 100px auto 0;
 }
 
-.btnWrap > * {
+.btnWrap button {
     flex: 0 1 45%;
-  }
+}
