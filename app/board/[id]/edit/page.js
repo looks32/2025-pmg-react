@@ -11,7 +11,7 @@ export default function BoardEdit() {
     <>
       <div>
         <TitleText text="게시글 수정" />
-        <Input type="text" placeholder="제목" />
+        <Input type="text" placeholder="제목" value="asdasd" />
         <InputFile inputId="file1" />
         <Textarea placeholder="내용" rows="22"/>
         <div className={styles.btnArea}>
